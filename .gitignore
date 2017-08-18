@@ -1,0 +1,5 @@
+*.rar
+*.dll
+*.psd
+/page/.idea
+/png
