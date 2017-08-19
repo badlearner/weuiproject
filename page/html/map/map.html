@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>地图</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../js/libs/weui/css/weui.min.css">
+    <link rel="stylesheet" href="../../js/libs/swiper/css/swiper.min.css">
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=7bd6d303a5d036f140952b1a9c685a46"></script>
+    <script src="../../js/libs/util/rem.js"></script>
+    <script src="../../js/libs/base/zepto.min.js"></script>
+    <script src="../../js/libs/weui/js/weui.min.js"></script>
+</head>
+<body>
+<div class="map-title header_link">
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="weui-tab">
+                <div class="weui-navbar">
+                    <div class="weui-navbar__item weui-bar__item_on">
+                        请选择一级项目<i class="icon icon-down"></i>
+                    </div>
+                    <div class="weui-navbar__item">
+                        请选择二级项目<i class="icon icon-up"></i>
+                    </div>
+                </div>
+                <div class="weui-tab__panel">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map" id="divCharts"></div>
+<script type="text/javascript">
+    var map = new AMap.Map('divCharts');
+    map.setZoom(15);
+    map.setCenter([116.39,39.9]);
+    map.clearMap();  // 清除地图覆盖物
+    var treeCol=[];
+    for(var i=0;i<10;i++){
+        treeCol[i]=new Array();
+        for(var j=0;j<2;j++){
+            treeCol[i][0]=116.38+Math.random()/100;
+            treeCol[i][1]=39.90+Math.random()/100;
+        }
+    }
+    //alert(treeCol.length);
+    var markers = [], positions = [[116.405467, 39.907761], [116.415467, 39.907761], [116.415467, 39.917761], [116.425467, 39.907761], [116.385467, 39.907761]];
+    for (var i = 0, marker; i < treeCol.length; i++) {
+        marker = new AMap.Marker({
+            map: map,
+            position: treeCol[i]
+        });
+        markers.push(marker);
+    }
+    AMap.plugin(['AMap.ToolBar','AMap.Scale','AMap.OverView'],function(){
+        map.addControl(new AMap.ToolBar());
+        map.addControl(new AMap.Scale());
+        map.addControl(new AMap.OverView({isOpen:true}));
+    })
+</script>
+</body>
+</html>

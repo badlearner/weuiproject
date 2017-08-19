@@ -30,6 +30,9 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .icon-mobile-phone{display:inline-block;background-position:-69px 0;width:18px;height:20px;margin:0.15rem 0rem;}
 .icon-verifity{display:inline-block;background-position:-87px 0;width:19px;height:20px;margin:0.15rem 0rem;}
 .icon-time{display:inline-block;background-position:-58px 0;vertical-align:bottom;width:12px;height:15px;margin:0.15rem 0rem;}
+.icon-time-white{display:inline-block;background-position:-29px -28px;vertical-align:middle;width:15px;height:15px;}
+.icon-down{display:inline-block;background-position:-119px 0px;vertical-align:middle;width:15px;height:15px;}
+.icon-up{display:inline-block;background-position:-105px 0px;vertical-align:middle;width:15px;height:15px;}
 
 .index-icon{display:inline-block;width:62px;height:62px;background-image: url("../images/index_icon.png");background-size: 396%;}
 .index-icon-1{background-position: 0 0;}
@@ -41,18 +44,27 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .index-icon-7{background-position: -122px -61px;}
 .index-icon-8{background-position: -184px -61px;}
 .weui-btn_green{background: #89C348;}
+.weui-btn_opcity{background:rgba(255,255,255,0.2);border:2px solid #fff;}
 .index-image a{display: block;width:auto;height:4.5rem;border-radius: 3px;margin:5px 10px;}
 .index-image .images_1{background-image: url("../images/index_1.png");background-size:100%;}
 .index-image .images_2{background-image: url("../images/index_2.png");background-size:100%;}
 .index-image .images_1 p,.index-image .images_2 p{color:#fff;font-size: 0.9rem;line-height:4.5rem;font-weight: 700;text-align: center;}
 .mar-5{margin-top:0.5rem;}
+.padding-b-10{padding-bottom: 10px;}
+.letter-s{letter-spacing: 2px;}
 .w-50{display: inline-block;width: 50%;}
 .f-right{float:right;}
 .f-left{float:left;}
 .text-l{text-align: left;}
+.text-c{text-align: center;}
 .text-r{text-align: right;}
+.f-size-b{font-size:1.2rem;}
 .f-size-s{font-size: 0.5rem;}
+.f-size-m{font-size: 0.75rem;}
+.font-weight{font-weight: 700;}
+.text-c-white{color:#fff;}
 .order-list{margin:12px;border-radius: 3px;border:1px solid #d4d4d4;}
+.green-circle{display:inline-block;background:#8AC14C;width:10px;height:10px;border-radius: 50%;vertical-align: center;margin-right: 4px;}
 
 /*月嫂中心 基因监测*/
 .nanny-img{padding-top: 2.15rem;}
@@ -86,10 +98,7 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .o-position-r .o-position-a{position: absolute;top: -.2em;right: -.2em;}
 .order-list .time{font-size: 0.45rem;}
 .order-list .order-money{font-size:0.7rem;height: 0.8rem;}
-.order-list .order-money:after{
-    content:" ";
-    clear: both;
-}
+.order-list .order-money:after{content:" ";clear: both;}
 .order-list .order-btn{padding-top:5px;}
 .order-list .order-btn button{width:70%;}
 .order-list .statue{position:absolute;right:4px;top:5px;color:#0bb20c;font-size: 0.6rem;}
@@ -114,3 +123,25 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .project-list{padding-top:4.0rem;}
 .project-list .order-list{margin:12px;border-radius: 3px;border:1px solid #d4d4d4;}
 .project-list .order-img{width:80px;height:80px;}
+
+/*项目详情*/
+.project-detail{padding-top:2.15rem;}
+.detail_top{height:12rem;}
+.detail_top img{width:100%;height:12rem;}
+.project-detail .o-position-r{margin-right:0;}
+.project-detail .padding-b-10{margin-top: 2rem;}
+.detail_top .o-position-a{height:12rem;width:100%;left:0;top:0;z-index: 22;background: rgba(0,0,0,0.2);}
+.detail-btn{margin:1.3rem auto;width:60%;height:2rem;border-radius: 2px;}
+.detail-btn a{color:#fff;font-weight: 700;letter-spacing:2px;line-height:1.8rem;}
+.detail-content{margin:20px;}
+.detail-title{margin-bottom: 10px;}
+.detail-title .title{font-size:0.7rem;font-weight: 700;}
+.detail-title .sub-detail{font-size:0.6rem;padding-left: 20px;}
+
+/*地图*/
+.map{position:absolute;width:100%;height:100%;padding-top:2.15rem;bottom:0;}
+.map-title .page{width:100%;}
+.map-title .weui-navbar .weui-bar__item_on{
+    color:#fff;
+    background: #89C348;
+}
