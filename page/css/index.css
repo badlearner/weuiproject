@@ -78,9 +78,9 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 /*用户中心*/
 .user-back{position: relative;background:#89C348;width:100%;height:14rem;}
 .user-back .user-phone{position: absolute;display:block;right:1rem;top:1rem;}
-.user-back .user-image{text-align: center;padding-top: 3.5rem;width:5rem;height:5rem;margin:0 auto;border-radius: 50%;}
-.user-back .user-image img{border-radius: 50%;border:3px solid #90d049;}
-.user-back .user-name{color: #fff;text-align: center;font-size: 0.80rem;font-weight: 700;}
+.user-back .user-image{text-align: center;padding-top: 3.5rem;height:5rem;margin:0 auto;}
+.user-back .user-image img{border-radius: 50%;border:3px solid #90d049;height:5rem;width:5rem;}
+.user-back .user-name{color: #fff;text-align: center;font-size: 0.80rem;font-weight: 700;padding-top: 20px;}
 
 /*我的分享*/
 .my-share{padding-top:2.8rem;margin:0 10px;}
@@ -141,7 +141,48 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 /*地图*/
 .map{position:absolute;width:100%;height:100%;padding-top:2.15rem;bottom:0;}
 .map-title .page{width:100%;}
-.map-title .weui-navbar .weui-bar__item_on{
-    color:#fff;
-    background: #89C348;
-}
+.map-title .weui-navbar .weui-bar__item_on{color:#fff;background: #89C348;}
+
+/*专家列表*/
+.expert_head .page{width:100%;}
+.expert_head .weui-navbar .weui-bar__item_on{color:#fff;background: #89C348;}
+.expert-list{ padding-top:2rem;}
+
+/*技师首页*/
+.service-title .service-position{position: absolute;top:1.2rem;left:15px;color: #fff;width:50%;overflow: hidden;font-size: 0.45rem;text-overflow:ellipsis; }
+.service-title .user-name{font-size:0.7rem;padding-top:2.5rem;width:40%;margin:0 auto;text-overflow: ellipsis;overflow: hidden;}
+.service-title .user-image{padding-top: 0.8rem;}
+.service-title .user-position{font-size: 0.65rem;text-align: center;color:#fff;padding-top:15px;}
+.service-title .edit{border:1px solid #fff;padding:3px 2px 5px 3px;margin-left: 5px;}
+.start{width:60%;margin:0 auto;height:1.5rem;}
+.start #start{margin:0 auto;display:inline-block;height:1.5rem;width:120px;vertical-align: middle;}
+.start-text{color: #fff;font-size: 0.5rem;display: inline-block;}
+.service-title{border-top:1px solid #7AB33E;}
+.service-title .weui-navbar .weui-bar__item_on{color:#fff;background: #89C348;}
+.service-list .order-list{margin:8px 15px;}
+.order-type{font-size:0.5rem;color:#04be02;padding-left:10px;}
+.order-status{font-size:0.7rem;color:#04be02;float:right;}
+.my-package{margin:8px 15px;}
+.last-money{border:1px solid #d4d4d4;padding:0;}
+.last-money .title{font-size: 0.5rem;padding:10px 10px 0 15px;}
+.last-money .money{font-size:1.1rem;padding:0px 10px 10px 15px;}
+.last-money .weui-btn_green{border-radius: 0px;}
+.history-list{padding:0;border:1px solid #d4d4d4;}
+.history-list .title{background: #89C348;line-height:2.55555556;color:#fff;font-size: 0.9rem;padding-left:15px;}
+.history-list .title span{display: inline-block;margin-right: 10px;}
+.history-list .table-title,.history-list .table-body{font-size: 0.5rem;}
+.history-list .page__bd_spacing{padding:8px;}
+.Withdraw .input-money{border:none;border-bottom: 1px solid #bbbaba;width:70%;font-size: 0.8rem;margin-left: 5px;padding:3px 0;}
+.Withdraw .input-money:focus{border:none;border-bottom: 1px solid #bbbaba;box-shadow: none;}
+.money-message{margin:8px 17px;}
+.money-message .title{font-size: 0.5rem;}
+.money-message .text-c-green{color:#0bb20c;margin:20px auto;}
+.Withdraw .last-money .money{padding:0px 10px 0 15px;}
+.Withdraw .my-package{padding-bottom: 5px;}
+.Withdraw .des{padding-bottom: 20px;}
+
+/*扫二维码*/
+.qr-code{padding-top: 2.5rem;}
+.qr-code .order-img{width:80px;height:80px;}
+.qr-code .qr-img{text-align: center;}
+.qr-code .qr-img .des{font-size: 0.5rem;text-align: center;padding-bottom: 15px;padding-top: 5px;}
