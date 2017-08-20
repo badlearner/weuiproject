@@ -20,6 +20,7 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .tip-icon .tip-y{display: inline-block;background: #D1DB4D;width:0.12rem;height:0.8rem;}
 .title .content{padding-left:1.1rem;}
 .project_des{font-size: 0.45rem;padding-top: 8px;}
+.mar-r{margin-right: 1rem;}
 
 .icon{display:inline-block;background-image: url("../images/icon.png");}
 .icon-menu{background-position:0 -28px;width:30px;height:30px;display: block;float:left;margin: 0.5rem;}
@@ -31,8 +32,10 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .icon-verifity{display:inline-block;background-position:-87px 0;width:19px;height:20px;margin:0.15rem 0rem;}
 .icon-time{display:inline-block;background-position:-58px 0;vertical-align:bottom;width:12px;height:15px;margin:0.15rem 0rem;}
 .icon-time-white{display:inline-block;background-position:-29px -28px;vertical-align:middle;width:15px;height:15px;}
-.icon-down{display:inline-block;background-position:-119px 0px;vertical-align:middle;width:15px;height:15px;}
-.icon-up{display:inline-block;background-position:-105px 0px;vertical-align:middle;width:15px;height:15px;}
+.icon-up{display:inline-block;background-position:-119px 0;vertical-align:middle;width:15px;height:10px;}
+.icon-down{display:inline-block;background-position:-105px 0px;vertical-align:middle;width:15px;height:10px;}
+.icon-down-w{display:inline-block;background-position:-119px -15px;vertical-align:middle;width:15px;height:15px;}
+.icon-position-b{display:inline-block;background-position:-45px -22px;vertical-align:bottom;width:15px;height:25px;}
 
 .index-icon{display:inline-block;width:62px;height:62px;background-image: url("../images/index_icon.png");background-size: 396%;}
 .index-icon-1{background-position: 0 0;}
@@ -53,6 +56,9 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .padding-b-10{padding-bottom: 10px;}
 .letter-s{letter-spacing: 2px;}
 .w-50{display: inline-block;width: 50%;}
+.w-70{width:65%;}
+.w-30{width:35%;}
+.text-c-green{color:#0bb20c;}
 .f-right{float:right;}
 .f-left{float:left;}
 .text-l{text-align: left;}
@@ -147,7 +153,11 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 /*专家列表*/
 .expert_head .page{width:100%;}
 .expert_head .weui-navbar .weui-bar__item_on{color:#fff;background: #89C348;}
-.expert-list{ padding-top:2rem;}
+.expert-list{ padding-top:2.3rem;padding-bottom: 2.3rem;}
+.expert-list .order-list {margin:8px 12px;}
+.expert-list .order-money{height:1.4rem;}
+.expert-list .order-money .w-70{overflow:hidden;text-overflow:ellipsis;word-break:break-all;display: inline-block;height:1.2rem;}
+.expert-list .order-money .w-30{line-height:1.4rem;}
 
 /*技师首页*/
 .service-title .service-position{position: absolute;top:1.2rem;left:15px;color: #fff;width:50%;overflow: hidden;font-size: 0.45rem;text-overflow:ellipsis; }
@@ -187,3 +197,10 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .qr-code .order-img{width:80px;height:80px;}
 .qr-code .qr-img{text-align: center;}
 .qr-code .qr-img .des{font-size: 0.5rem;text-align: center;padding-bottom: 15px;padding-top: 5px;}
+
+/*预约到店*/
+.store-list{padding-top: 2.3rem;padding-bottom: 2.3rem;}
+.store-list .order-list {margin:8px 12px;}
+.store-type{margin:0.3rem 0 0 0.4rem;display: block;font-size: 1rem;}
+.store-type .icon-down-w{vertical-align: bottom;}
+.store-list .project_des{padding-top: 0;}
