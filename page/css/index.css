@@ -24,7 +24,7 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 
 .icon{display:inline-block;background-image: url("../images/icon.png");}
 .icon-menu{background-position:0 -28px;width:30px;height:30px;display: block;float:left;margin: 0.5rem;}
-.icon-position-w{display:inline-block;background-position:-29px 0;width:15px;height:20px;}
+.icon-position-w{display:inline-block;background-position:-29px 0;width:14px;height:20px;}
 .icon-phone{display:inline-block;background-position:-130px 0;width:35px;height:30px;margin:0.15rem 0rem;}
 .icon-back{background-position:0 0;width:28px;height:28px;display: block;float:left;margin:0.5rem 0.4rem;}
 .icon-share{display:inline-block;background-position:-165px 0;width:22px;height:22px;vertical-align: middle;}
@@ -205,3 +205,15 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .store-type{margin:0.3rem 0 0 0.4rem;display: block;font-size: 1rem;}
 .store-type .icon-down-w{vertical-align: bottom;}
 .store-list .project_des{padding-top: 0;}
+
+/*店铺详情 联系我们*/
+.shop_detail{padding-top:0px;}
+.shop_top{height:9rem}
+.shop_top img{height:9rem; width:100%}
+.shop_detail o-position-r{margin-right:0px}
+.shop_detail .padding-b-10{margin-top: 3rem;}
+.shop_detail .o-position-a{height:9rem;width:100%;left:0;top:0;z-index: 22;position:absolute;}
+.sub-detail-image{width:100%;height:8rem;background: rgba(0,0,0,0.2);margin-bottom:5px}
+.shop_appointment button{position: fixed;left:0px;right:0px;bottom:0px;padding:0px;}
+
+/*店铺类型*/
