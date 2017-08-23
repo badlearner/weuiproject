@@ -219,4 +219,17 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .sub-detail-image{width:100%;height:8rem;background: rgba(0,0,0,0.2);margin-bottom:5px}
 .shop_appointment button{position: fixed;left:0px;right:0px;bottom:0px;padding:0px;}
 
-/*店铺类型*/
+/*实名专家页面*/
+.expert_header_link{border-bottom: solid 1px #9b9b9b;}
+.expert-label {border-bottom:1px solid #C6C6C6;padding:0px 5px 5px 5px;}
+.expert-label .o-position-r .start{margin-left:15px;margin-right:15px;padding-right:0px;line-height:1.5rem;width:80%;color:#000000}
+.expert-label .o-position-r .expert-console{margin-right:15px;}
+.detail-content .certificate a{width:45%;text-align:center}
+.detail-content .certificate a img{width:100%;height:4rem;background: rgba(0,0,0,0.2);border:1px solid #000000;}
+.history-comment{border-radius: 3px;border:1px solid #d4d4d4;}
+.history-comment .comment-user{text-align: center;}
+.history-comment .comment-content{text-align:left;margin-right:0px}
+.history-comment .comment-content .start .expert-start{margin:0 auto;display:inline-block;height:1.5rem;width:120px;vertical-align: middle;}
+.appointment{display: inline-block}
+.appointment .appointment_left{position: fixed;left:0px;bottom:0px;padding:0px;width:50%}
+.appointment .appointment_right{position: fixed;right:0px;bottom:0px;padding:0px;width:50%}
