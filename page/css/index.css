@@ -221,7 +221,7 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 
 /*实名专家页面*/
 .expert_header_link{border-bottom: solid 1px #9b9b9b;}
-.expert-label {border-bottom:1px solid #C6C6C6;padding:0px 5px 5px 5px;height: 7rem;}
+.expert-label {border-bottom:1px solid #C6C6C6;padding:0px 5px 5px 5px;height: 120px;}
 .expert-label .o-position-r .start{margin-left:15px;margin-right:15px;padding-right:0px;line-height:1.5rem;width:80%;color:#000000}
 .expert-label .o-position-r .expert-console{margin-right:15px;}
 .detail-content .certificate a{width:45%;text-align:center}
