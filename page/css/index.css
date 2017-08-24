@@ -39,6 +39,7 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .icon-person{display:inline-block;background-position:-45px -22px;vertical-align:bottom;width:15px;height:25px;}
 .icon-edit{display:inline-block;background-position:-45px -22px;vertical-align:bottom;width:15px;height:25px;}
 .icon-start{display:inline-block;background-position:-45px -22px;vertical-align:bottom;width:15px;height:25px;}
+.icon-line{display:inline-block;background-position:-45px -22px;vertical-align:bottom;width:15px;height:25px;}
 
 .index-icon{display:inline-block;width:62px;height:62px;background-image: url("../images/index_icon.png");background-size: 396%;}
 .index-icon-1{background-position: 0 0;}
