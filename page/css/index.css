@@ -39,7 +39,6 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .icon-person{display:inline-block;background-position:-45px -22px;vertical-align:bottom;width:15px;height:25px;}
 .icon-edit{display:inline-block;background-position:-45px -22px;vertical-align:bottom;width:15px;height:25px;}
 .icon-start{display:inline-block;background-position:-45px -22px;vertical-align:bottom;width:15px;height:25px;}
-.icon-line{display:inline-block;background-position:-45px -22px;vertical-align:bottom;width:15px;height:25px;}
 
 .index-icon{display:inline-block;width:62px;height:62px;background-image: url("../images/index_icon.png");background-size: 396%;}
 .index-icon-1{background-position: 0 0;}
@@ -60,8 +59,10 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .padding-b-10{padding-bottom: 10px;}
 .letter-s{letter-spacing: 2px;}
 .w-50{display: inline-block;width: 50%;}
+.w-80{width:80%;}
 .w-70{width:65%;}
 .w-30{width:35%;}
+.w-33{width:33%;}
 .text-c-green{color:#0bb20c;}
 .f-right{float:right;}
 .f-left{float:left;}
@@ -210,7 +211,7 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .store-type .icon-down-w{vertical-align: bottom;}
 .store-list .project_des{padding-top: 0;}
 
-/*店铺详情 联系我们**/
+/*店铺详情 联系我们*/
 .shop_detail{padding-top:0px;}
 .shop_top{height:9rem}
 .shop_top img{height:9rem; width:100%}
@@ -234,3 +235,29 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .appointment{display: inline-block}
 .appointment .appointment_left{position: fixed;left:0px;bottom:0px;padding:0px;width:50%}
 .appointment .appointment_right{position: fixed;right:0px;bottom:0px;padding:0px;width:50%}
+
+
+/*订单*/
+.order-content{margin-top:2.3rem}
+.order-list .order-label{height:1.5rem;line-height:1.5rem}
+.order-list .order-label .milk{margin-right:20px}
+.order-list .order-label .price{line-height: 1.5rem}
+.order-label-time{overflow: hidden;border:0px}
+.order-label-time .order-label-date-time{border:1px solid #d4d4d4;height:1.5rem;width:49%;text-align: center;line-height:1.5rem;}
+.order-address{border:0px;}
+.order-address .address-detail{height: 1.5rem;border:1px solid #d4d4d4;line-height:1.5rem;text-align:center;}
+.order-address .address-detail div{color:#d4d4d4;}
+.order-form{padding-top:0px;margin-top:0px;margin-bottom:0px;}
+.order-form .input-form{margin-top:0px;margin-bottom:0px;}
+.order-form .input-form .memo{height:3rem}
+.order-form .input-form .memo .memo-description{float:left}
+.order-form .input-form .memo textarea{height:3rem}
+.order-recognize{margin-top:3rem}
+.order-recognize .recognize-title{text-align: center;color: #77C560;}
+.order-recognize .recognize-content{margin:10px 10px;color: #77C560;}
+.order-appointment-left{width:70%;}
+.order-appointment-left button{height:1.8rem;line-height:1.8rem;}
+.order-appointment-left button div{margin-right:40px;margin-left:50px;}
+.order-appointment-right{width:30%;height:1.8rem;line-height:1.8rem;}
+
+
