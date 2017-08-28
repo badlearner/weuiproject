@@ -26,10 +26,10 @@
         <p class="title"><span class="tip-icon"><i class="tip-g"></i><i class="tip-y"></i></span><span class="content">服务项目</span></p>
         <div class="weui-cells order-list">
             <div class="weui-cell">
-                <div class="weui-cell__bd o-position-r" style="height:1.5rem;line-height:1.5rem">
+                <div class="weui-cell__bd o-position-r order-label">
                     <p class="" style="overflow: hidden">
-                        <div class="content f-size-m f-left" style="margin-right:20px;">产后开奶</div>
-                        <div class="content f-left" style="line-height: 1.5rem">
+                        <div class="content f-size-m f-left milk">产后开奶</div>
+                        <div class="content f-left price">
                             <span class="f-size-s">
                             <city >
                                 90
@@ -48,11 +48,11 @@
 
     <div class="detail-title">
         <p class="title"><span class="tip-icon"><i class="tip-g"></i><i class="tip-y"></i></span><span class="content">服务时间</span></p>
-        <div class="order-list" style="overflow: hidden;border:0px">
-            <div class="f-left f-size-s" style="border:1px solid #d4d4d4;height:1.5rem;width:49%;text-align: center;line-height:1.5rem;">
+        <div class="order-list order-label-time">
+            <div class="f-left f-size-s order-label-date-time">
                 请选择日期 <i class="icon icon-down"></i>
             </div>
-            <div class="f-left f-size-s" style="border:1px solid #d4d4d4;height:1.5rem;width:49%;text-align: center;line-height:1.5rem;">
+            <div class="f-left f-size-s order-label-date-time">
                 请选择服务时间段 <i class="icon icon-down"></i>
             </div>
         </div>
@@ -60,9 +60,9 @@
 
     <div class="detail-title">
         <p class="title"><span class="tip-icon"><i class="tip-g"></i><i class="tip-y"></i></span><span class="content">服务地址</span></p>
-                <div class="order-list"  style="border:0px;">
-                    <div style="height: 1.5rem;border:1px solid #d4d4d4;line-height:1.5rem;text-align:center;">
-                        <div class="f-size-s" style="color:#d4d4d4;">请输入市区|街道|小区|楼栋号|单元号|门牌号</div>
+                <div class="order-list order-address">
+                    <div class="address-detail">
+                        <div class="f-size-s">请输入市区|街道|小区|楼栋号|单元号|门牌号</div>
                     </div>
                 </div>
     </div>
@@ -70,12 +70,12 @@
     <div class="detail-title">
         <p class="title"><span class="tip-icon"><i class="tip-g"></i><i class="tip-y"></i></span><span class="content">联系方式</span></p>
 
-        <div class="nanny-from" style="padding-top:0px;margin-top:0px;margin-bottom:0px;">
-            <div class="input-form" style="margin-top:0px;margin-bottom:0px;">
+        <div class="nanny-from order-form">
+            <div class="input-form">
                 <form>
                     <div class="mar-5"><label>姓名：<input type="text" class="bor-1 input-text" /></label></div>
                     <div class="mar-5"><label>电话：<input type="text" class="bor-1 input-text" /></label></div>
-                    <div class="mar-5" style="height:3rem;"><div style="float:left">备注：</div><textarea class="bor-1 input-text" style="height:3rem;"></textarea></div>
+                    <div class="mar-5 memo"><div class="memo-description">备注：</div><textarea class="bor-1 input-text"></textarea></div>
                     <div class="mar-5">
                         <label>
                             <div class="f-left" style="margin-right:30px;">
@@ -96,9 +96,9 @@
 
 
 
-    <div style="margin-top:3rem">
-        <div style="text-align: center;color: #77C560;" class="f-size-m">温馨提示</div>
-        <div style="margin:10px 10px;color: #77C560;" class="f-size-s" >
+    <div class="order-recognize">
+        <div class="f-size-m recognize-title">温馨提示</div>
+        <div class="f-size-s recognize-content" >
             18:00后将加收100元夜间服务费，超过15公里加收100元长距离服务费，医疗将加收100元专家费，国际泌乳顾问将加收200元专家费！订单支付后仅可以联系客服更换技师或者服务时间！
         </div>
     </div>
@@ -107,15 +107,15 @@
 </div>
 
 <div class="appointment">
-    <div class="appointment_left" style="width:70%;">
-        <button class="weui-btn weui-btn_default expert_appointment" style="height:1.8rem;line-height:1.8rem;">
-            <div class="f-left" style="margin-right:40px;margin-left:50px;">
+    <div class="appointment_left order-appointment-left">
+        <button class="weui-btn weui-btn_default expert_appointment">
+            <div class="f-left">
                 合计:￥<city class="money">399.00</city>
             </div>
             <span class="f-left f-size-s">明细 <i class="icon icon-down"></i></span>
         </button>
     </div>
-    <div class="appointment_right" style="width:30%;height:1.8rem;line-height:1.8rem;">
+    <div class="appointment_right order-appointment-right">
         <button class="weui-btn weui-btn_green expert_appointment" >支付</button>
     </div>
 </div>
