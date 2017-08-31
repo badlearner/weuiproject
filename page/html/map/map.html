@@ -19,10 +19,10 @@
             <div class="weui-tab">
                 <div class="weui-navbar">
                     <div class="weui-navbar__item weui-bar__item_on">
-                        请选择一级项目<i class="icon icon-down-w"></i>
+                        请选择一级项目<i class="icon icon-up"></i>
                     </div>
                     <div class="weui-navbar__item">
-                        请选择二级项目<i class="icon icon-up"></i>
+                        请选择二级项目<i class="icon icon-down"></i>
                     </div>
                 </div>
                 <div class="weui-tab__panel">
@@ -32,6 +32,17 @@
     </div>
 </div>
 <div class="map" id="divCharts"></div>
+<script>
+    $(function(){
+        $('.weui-navbar__item').click(function() {
+            var data = $(this).attr("list-data");
+            $(this).addClass('weui-bar__item_on');
+            $(this).children("i").removeClass('icon-down').addClass('icon-up');
+            $(this).siblings(".weui-navbar__item").children("i").removeClass('icon-up').addClass('icon-down');
+            $(this).siblings(".weui-navbar__item").removeClass('weui-bar__item_on');
+        });
+    })
+</script>
 <script type="text/javascript">
     //地图初始化
     var map = new AMap.Map('divCharts',{resizeEnable: true,zooms:[10,20]});

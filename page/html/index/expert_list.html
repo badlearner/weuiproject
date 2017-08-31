@@ -114,7 +114,15 @@
         slidesPerView: 4,
         spaceBetween: 30,
     });
-
+    $(function(){
+        $('.weui-navbar__item').click(function() {
+            var data = $(this).attr("list-data");
+            $(this).addClass('weui-bar__item_on');
+            $(this).children("i").removeClass('icon-down').addClass('icon-up');
+            $(this).siblings(".weui-navbar__item").children("i").removeClass('icon-up').addClass('icon-down');
+            $(this).siblings(".weui-navbar__item").removeClass('weui-bar__item_on');
+        });
+    })
 </script>
 </body>
 </html>
