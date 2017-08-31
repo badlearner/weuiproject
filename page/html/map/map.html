@@ -33,10 +33,24 @@
 </div>
 <div class="map" id="divCharts"></div>
 <script type="text/javascript">
-    var map = new AMap.Map('divCharts',{resizeEnable: true});
+    //地图初始化
+    var map = new AMap.Map('divCharts',{resizeEnable: true,zooms:[10,20]});
     map.setZoom(15);
     map.clearMap();  // 清除地图覆盖物
     var infoWindow = new AMap.InfoWindow();
+
+    //获取经纬范围
+    var minMaxLng={min:'',max:''};//经度范围
+    var minMaxLat={min:'',max:''};//纬度范围
+    map.on('mapmove', function(e) {
+        var value=map.getBounds();
+        minMaxLng.min=value.southwest.lng;
+        minMaxLng.max=value.northeast.lng;
+        minMaxLat.min=value.southwest.lat;
+        minMaxLat.max=value.northeast.lat;
+    });
+
+    //设置点和点击事件
     var treeCol=[];
     for(var i=0;i<10;i++){
         treeCol[i]=new Array();
@@ -45,7 +59,6 @@
             treeCol[i][1]=23.12+Math.random()/100;
         }
     }
-    //alert(treeCol.length);
     var markers = [], positions = [[113.317029,23.126125], [113.317029,23.136125], [113.337029,23.126125], [113.347029,23.126125], [113.317029,23.186125]];
     for (var i = 0, marker; i < treeCol.length; i++) {
         marker = new AMap.Marker({
