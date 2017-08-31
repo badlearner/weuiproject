@@ -1,18 +1,19 @@
 html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .head-icon{width:100%;height:100%;}
-.position{display: block;float:right;margin:0.4rem;}
+.position{display: block;float:right;margin:0.2rem;}
 .position-r{position: relative;}
 .position .name{color:#fff;font-size: 0.4rem;}
-.header_link{position: fixed;top:0;display:flex;height: 2.15rem;width:100%;z-index: 500;background: #8AC14C;}
+.header_link{position: fixed;top:0;display:flex;height: 2.0rem;width:100%;z-index: 500;background: #8AC14C;}
 .header_link .center-text{position: absolute;display: inline-block;width:8rem;height:2rem;top:50%;left:50%;margin-left:-4rem; margin-top:-1rem;color:#fff;font-size:1rem;text-align: center;line-height: 2.0rem;}
 .footer_link{height: 1.95rem;position: fixed;}
 .footer_link a{margin:3px 0;}
-.mar-header{padding-top:2.15rem; height:9rem;width:100%;}
+.mar-header{padding-top:2.0rem; height:9rem;width:100%;}
 .mar-header .img{width:100%;height:9rem;}
 .footer_link .weui-tabbar__label{font-size: 0.7rem;font-weight: 700;}
 .mar-header .swiper-pagination-bullet-active{background-color: #D7E52F;}
-.page_flex{margin:0.5rem 0.3rem;}
-.page_flex .page_bd{margin:0.6rem auto;}
+.page_flex{margin:0.3rem 0.3rem;}
+.index-image{padding-bottom: 2rem;}
+.page_flex .page_bd{margin:0.3rem auto;}
 .placeholder a{color:#0d0d0d;}
 .placeholder p{text-align:center;font-size: 0.6rem;}
 .title{ font-size: 0.75rem;position: relative}
@@ -24,10 +25,10 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .mar-r{margin-right: 1rem;}
 
 .icon{display:inline-block;background-image: url("../images/icon.png");}
-.icon-menu{background-position:0 -28px;width:30px;height:30px;display: block;float:left;margin: 0.5rem;}
+.icon-menu{background-position:0 -28px;width:30px;height:30px;display: block;float:left;margin: 0.45rem;}
 .icon-position-w{display:inline-block;background-position:-29px 0;width:14px;height:20px;}
-.icon-phone{display:inline-block;background-position:-130px 0;width:35px;height:30px;margin:0.15rem 0rem;}
-.icon-back{background-position:0 0;width:28px;height:28px;display: block;float:left;margin:0.5rem 0.4rem;}
+.icon-phone{display:inline-block;background-position:-130px 0;width:35px;height:30px;margin:0.1rem 0rem;}
+.icon-back{background-position:0 0;width:28px;height:28px;display: block;float:left;margin:0.3rem 0.4rem;}
 .icon-share{display:inline-block;background-position:-165px 0;width:22px;height:22px;vertical-align: middle;}
 .icon-mobile-phone{display:inline-block;background-position:-69px 0;width:18px;height:20px;margin:0.15rem 0rem;}
 .icon-verifity{display:inline-block;background-position:-87px 0;width:19px;height:20px;margin:0.15rem 0rem;}
@@ -79,9 +80,9 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .green-circle{display:inline-block;background:#8AC14C;width:10px;height:10px;border-radius: 50%;vertical-align: center;margin-right: 4px;}
 
 /*月嫂中心 基因监测*/
-.nanny-img{padding-top: 2.15rem;}
-.nanny-img img{width: 100%;height:auto;}
-.nanny-from{margin:1rem 10px;}
+.nanny-img{padding-top: 2.0rem;}
+.nanny-img img{width: 100%;height:auto;max-height: 250px;}
+.nanny-from{margin:0.5rem 10px;}
 .nanny-from .title{ font-size: 0.75rem;}
 .nanny-from .input-form{margin:1rem 0.85rem;font-size: 0.65rem;}
 .bor-1{border:1px solid #d6d3d3;}
@@ -137,7 +138,7 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .project-list .order-img{width:80px;height:80px;}
 
 /*项目详情*/
-.project-detail{padding-top:2.15rem;}
+.project-detail{padding-top:2.0rem;}
 .detail_top{height:12rem;}
 .detail_top img{width:100%;height:12rem;}
 .project-detail .o-position-r{margin-right:0;}
@@ -152,10 +153,11 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 
 /*地图*/
 .map-title{background: transparent;}
-.map{position:absolute;width:100%;height:100%;padding-top:2.15rem;bottom:0;}
+.map{position:absolute;width:100%;height:100%;padding-top:2.0rem;bottom:0;}
 .map-title .page{width:100%;}
 .map-title .weui-navbar .weui-bar__item_on{color:#fff;background: #89C348;}
 .map-title .icon-down-w{vertical-align: bottom;}
+.map .amap-info-content{font-size: 12px;padding:15px;}
 
 /*专家列表*/
 .expert_head .page{width:100%;}

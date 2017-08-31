@@ -33,31 +33,36 @@
 </div>
 <div class="map" id="divCharts"></div>
 <script type="text/javascript">
-    var map = new AMap.Map('divCharts');
+    var map = new AMap.Map('divCharts',{resizeEnable: true});
     map.setZoom(15);
-    map.setCenter([116.39,39.9]);
     map.clearMap();  // 清除地图覆盖物
+    var infoWindow = new AMap.InfoWindow();
     var treeCol=[];
     for(var i=0;i<10;i++){
         treeCol[i]=new Array();
         for(var j=0;j<2;j++){
-            treeCol[i][0]=116.38+Math.random()/100;
-            treeCol[i][1]=39.90+Math.random()/100;
+            treeCol[i][0]=113.27+Math.random()/100;
+            treeCol[i][1]=23.12+Math.random()/100;
         }
     }
     //alert(treeCol.length);
-    var markers = [], positions = [[116.405467, 39.907761], [116.415467, 39.907761], [116.415467, 39.917761], [116.425467, 39.907761], [116.385467, 39.907761]];
+    var markers = [], positions = [[113.317029,23.126125], [113.317029,23.136125], [113.337029,23.126125], [113.347029,23.126125], [113.317029,23.186125]];
     for (var i = 0, marker; i < treeCol.length; i++) {
         marker = new AMap.Marker({
             map: map,
             position: treeCol[i]
         });
+        marker.content='我是第'+i+'个信息窗体的内容';
+        marker.on('click', markerClick);
         markers.push(marker);
     }
-    AMap.plugin(['AMap.ToolBar','AMap.Scale','AMap.OverView'],function(){
+    function markerClick(e){
+        infoWindow.setContent(e.target.content);
+        infoWindow.open(map, e.target.getPosition());
+    }
+    AMap.plugin(['AMap.ToolBar','AMap.Scale'],function(){
         map.addControl(new AMap.ToolBar());
         map.addControl(new AMap.Scale());
-        map.addControl(new AMap.OverView({isOpen:true}));
     })
 </script>
 </body>
