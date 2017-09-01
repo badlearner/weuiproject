@@ -3,7 +3,7 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .position{display: block;float:right;margin:0.2rem;}
 .position-r{position: relative;}
 .position .name{color:#fff;font-size: 0.4rem;}
-.header_link{position: fixed;top:0;display:flex;height: 2.0rem;width:100%;z-index: 500;background: #8AC14C;}
+.header_link{position: fixed;top:0;display:flex;height: 2.0rem;width:100%;z-index: 6000;background: #8AC14C;}
 .header_link .center-text{position: absolute;display: inline-block;width:8rem;height:2rem;top:50%;left:50%;margin-left:-4rem; margin-top:-1rem;color:#fff;font-size:1rem;text-align: center;line-height: 2.0rem;}
 .footer_link{height: 1.95rem;position: fixed;}
 .footer_link a{margin:3px 0;}
@@ -158,6 +158,16 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .map-title .weui-navbar .weui-bar__item_on{color:#fff;background: #89C348;}
 .map-title .icon-down-w{vertical-align: bottom;}
 .map .amap-info-content{font-size: 12px;padding:15px;}
+.weui-pos-top .weui-actionsheet{
+    top:0;
+    bottom: auto;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.weui-pos-top .weui-actionsheet_toggle{
+    -webkit-transform: translate(0);
+    transform: translate(0);
+}
 
 /*专家列表*/
 .expert_head .page{width:100%;}

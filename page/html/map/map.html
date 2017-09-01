@@ -15,10 +15,10 @@
 <body>
 <div class="header_link map-title">
     <div class="page">
-        <div class="page__bd" style="height: 100%;">
+        <div class="page__bd" style="height:100%;">
             <div class="weui-tab">
                 <div class="weui-navbar">
-                    <div class="weui-navbar__item weui-bar__item_on">
+                    <div class="weui-navbar__item weui-bar__item_on" id="iosActionsheetCancel">
                         请选择一级项目<i class="icon icon-up"></i>
                     </div>
                     <div class="weui-navbar__item">
@@ -31,16 +31,37 @@
         </div>
     </div>
 </div>
+<div class="weui-pos-top">
+    <div class="weui-mask" id="iosMask" style="display:none"></div>
+    <div class="weui-actionsheet" id="iosActionsheet">
+        <div class="weui-actionsheet__menu">
+            <div class="weui-actionsheet__cell">示例菜单</div>
+            <div class="weui-actionsheet__cell">示例菜单</div>
+            <div class="weui-actionsheet__cell">示例菜单</div>
+            <div class="weui-actionsheet__cell">示例菜单</div>
+        </div>
+    </div>
+</div>
 <div class="map" id="divCharts"></div>
 <script>
     $(function(){
+        var $iosActionsheet = $('#iosActionsheet');
+        var $iosMask = $('#iosMask');
         $('.weui-navbar__item').click(function() {
             var data = $(this).attr("list-data");
             $(this).addClass('weui-bar__item_on');
+            $iosActionsheet.addClass('weui-actionsheet_toggle');
+            $iosMask.fadeIn(200);
             $(this).children("i").removeClass('icon-down').addClass('icon-up');
             $(this).siblings(".weui-navbar__item").children("i").removeClass('icon-up').addClass('icon-down');
             $(this).siblings(".weui-navbar__item").removeClass('weui-bar__item_on');
         });
+
+        function hideActionSheet() {
+            $iosActionsheet.removeClass('weui-actionsheet_toggle');
+            $iosMask.fadeOut(200);
+        }
+        $iosMask.on('click', hideActionSheet);
     })
 </script>
 <script type="text/javascript">
