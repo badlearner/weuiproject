@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>提现</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../js/libs/weui/css/weui.min.css">
+    <link rel="stylesheet" href="../../js/libs/swiper/css/swiper.min.css">
+    <script src="../../js/libs/util/rem.js"></script>
+    <!--<script src="../../js/libs/base/zepto.min.js"></script>-->
+    <script src="../../js/libs/star/jquery.min.js"></script>
+    <script src="../../js/libs/star/jquery.raty.min.js"></script>
+    <script src="../../js/libs/weui/js/weui.min.js"></script>
+</head>
+<body>
+
+<div class="service-title user-back">
+    <p class="service-position"><i class="icon icon-position-w"></i><span>成都妇幼儿童医院</span></p>
+    <p class="user-name">爱吃蛋糕长不胖</p>
+    <p class="user-image"><img src="../../images/user_title.png"></p>
+    <a href="#" class="user-phone"><i class="icon icon-phone"></i></a>
+    <p class="user-position">资深产后恢复调理师</p>
+    <div class="start"><div id="start"></div><span class="start-text"><city class="">4</city>分<city class="">62</city>人评论</span></div>
+</div>
+<div class="service-title page">
+    <div class="page__bd" style="height: 100%;">
+        <div class="weui-tab">
+            <div class="weui-navbar">
+                <div class="weui-navbar__item weui-bar__item_on" list-data="order">
+                    订单
+                </div>
+                <div class="weui-navbar__item" list-data="money">
+                    钱包
+                </div>
+            </div>
+            <div class="weui-tab__panel">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="service-list">
+    <div class="weui-cells order-list">
+        <div class="weui-cell">
+            <div class="weui-cell__bd o-position-r">
+                <p class="order-title">产后开奶<span class="order-type">专家订单</span><span class="order-status">待回复</span></p>
+                <p class="project_des">姓名：<span>磊箫</span></p>
+                <p class="project_des">电话：<span>19398639983</span></p>
+                <p class="project_des">留言：</span>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span></p>
+                <p class="project_des">图片：</span>--</span></p>
+                <p class="project_des">下单时间：<span>2015-7-8 06:22:10</span></p>
+                <p class="project_des">
+                    <textarea class="f-size-s reply-textarea" placeholder="请在此输入回复"></textarea>
+                </p>
+                <p class="w-30 f-right"><button class="weui-btn weui-btn_green">确认接单</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="service-list">
+    <div class="weui-cells order-list">
+        <div class="weui-cell">
+            <div class="weui-cell__bd o-position-r">
+                <p class="order-title">产后开奶<span class="order-type">专家订单</span><span class="order-status">待回复</span></p>
+                <p class="project_des">姓名：<span>磊箫</span></p>
+                <p class="project_des">电话：<span>19398639983</span></p>
+                <p class="project_des">留言：</span>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span></p>
+                <p class="project_des">
+                    <div class="f-left f-size-s">图片:</div>
+                    <div class="f-left" style="width:90%">
+                        <div class="reply-pic f-left"></div>
+                        <div class="reply-pic f-left"></div>
+                        <div class="reply-pic f-left"></div>
+                    </div>
+                </p>
+                <p class="project_des">下单时间：<span>2015-7-8 06:22:10</span></p>
+                <p class="project_des">
+                    <textarea class="f-size-s reply-textarea" placeholder="请在此输入回复"></textarea>
+                </p>
+                <p class="w-30 f-right"><button class="weui-btn weui-btn_green">确认接单</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+<script>
+    $(function(){
+        $.fn.raty.defaults.path = '../../js/libs/star/img';
+        $('#start').raty({ readOnly: true, score: 4,width:120, });
+    });
+</script>
+</html>

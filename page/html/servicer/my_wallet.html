@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>提现</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../js/libs/weui/css/weui.min.css">
+    <link rel="stylesheet" href="../../js/libs/swiper/css/swiper.min.css">
+    <script src="../../js/libs/util/rem.js"></script>
+    <!--<script src="../../js/libs/base/zepto.min.js"></script>-->
+    <script src="../../js/libs/star/jquery.min.js"></script>
+    <script src="../../js/libs/star/jquery.raty.min.js"></script>
+    <script src="../../js/libs/weui/js/weui.min.js"></script>
+</head>
+<body>
+
+<div class="service-title user-back">
+    <p class="service-position"><i class="icon icon-position-w"></i><span>成都妇幼儿童医院</span></p>
+    <p class="user-name">爱吃蛋糕长不胖</p>
+    <p class="user-image"><img src="../../images/user_title.png"></p>
+    <a href="#" class="user-phone"><i class="icon icon-phone"></i></a>
+    <p class="user-position">资深产后恢复调理师</p>
+    <div class="start"><div id="start"></div><span class="start-text"><city class="">4</city>分<city class="">62</city>人评论</span></div>
+</div>
+<div class="service-title page">
+    <div class="page__bd" style="height: 100%;">
+        <div class="weui-tab">
+            <div class="weui-navbar">
+                <div class="weui-navbar__item weui-bar__item_on" list-data="order">
+                    订单
+                </div>
+                <div class="weui-navbar__item" list-data="money">
+                    钱包
+                </div>
+            </div>
+            <div class="weui-tab__panel">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="service-list">
+    <div class="weui-cells order-list">
+        <div class="weui-cell">
+            <div class="weui-cell__bd o-position-r">
+                <p class="f-size-s">余额账户(元)</p>
+                <p style="height:3rem"><span class="f-size-b money">100000</span></p>
+            </div>
+        </div>
+        <div><button id="Withdraw" class="weui-btn weui-btn_green">提现</button></div>
+    </div>
+</div>
+
+<div class="wallet-divider"></div>
+
+<div class="service-list">
+    <div class="weui-cells order-list">
+        <div>
+            <div class="wallet-detail">
+                <div class="wallet-detail-panel">
+                    钱包明细
+                    <i class="icon-up icon-up-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__bd o-position-r">
+                <div class="wallet-detail-titleAndcontent" style="overflow: hidden;width:100%">
+                    <div class="f-left w-33">事件</div>
+                    <div class="f-left w-33">金额</div>
+                    <div class="f-left w-33">金钱</div>
+                </div>
+
+
+                <div class="wallet-detail-titleAndcontent f-size-s">
+                    <div class="f-left w-33">产后开访</div>
+                    <div class="f-left w-33"><span class="money">+350(<span class="money deduct-money">-50</span>)</span></div>
+                    <div class="f-left w-33"><span class="time">2017.03.06</span> </div>
+                </div>
+
+
+
+                <div class="wallet-detail-titleAndcontent f-size-s">
+                    <div class="f-left w-33">小二皮肤</div>
+                    <div class="f-left w-33"><span class="money">+500(<span class="money deduct-money">-50</span>)</span></div>
+                    <div class="f-left w-33"><span class="time">2017.03.06</span> </div>
+                </div>
+
+
+                <div class="wallet-detail-titleAndcontent f-size-s withdraw-record">
+                    <div class="f-left w-33">提现</div>
+                    <div class="f-left w-33"><span class="money">+500</span></div>
+                    <div class="f-left w-33"><span class="time">2017.03.06</span> </div>
+                </div>
+
+
+                <div class="wallet-detail-titleAndcontent f-size-s">
+                    <div class="f-left w-33">产后开访</div>
+                    <div class="f-left w-33"><span class="money">+350(<span class="money deduct-money">-50</span>)</span></div>
+                    <div class="f-left w-33"><span class="time">2017.03.06</span> </div>
+                </div>
+
+
+                <div class="wallet-detail-titleAndcontent f-size-s">
+                    <div class="f-left w-33">产后开访</div>
+                    <div class="f-left w-33"><span class="money">+350(<span class="money deduct-money">-50</span>)</span></div>
+                    <div class="f-left w-33"><span class="time">2017.03.06</span> </div>
+                </div>
+
+
+                <div class="wallet-detail-titleAndcontent f-size-s">
+                    <div class="f-left w-33">产后开访</div>
+                    <div class="f-left w-33"><span class="money">+350(<span class="money deduct-money">-50</span>)</span></div>
+                    <div class="f-left w-33"><span class="time">2017.03.06</span> </div>
+                </div>
+
+
+                <div class="wallet-detail-titleAndcontent f-size-s">
+                    <div class="f-left w-33">产后开访</div>
+                    <div class="f-left w-33"><span class="money">+350(<span class="money deduct-money">-50</span>)</span></div>
+                    <div class="f-left w-33"><span class="time">2017.03.06</span> </div>
+                </div>
+
+
+                <div class="wallet-detail-titleAndcontent f-size-s">
+                    <div class="f-left w-33">产后开访</div>
+                    <div class="f-left w-33"><span class="money">+350(<span class="money deduct-money">-50</span>)</span></div>
+                    <div class="f-left w-33"><span class="time">2017.03.06</span> </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<script>
+    $(function(){
+        $.fn.raty.defaults.path = '../../js/libs/star/img';
+        $('#start').raty({ readOnly: true, score: 4,width:120, });
+    });
+</script>
+</html>

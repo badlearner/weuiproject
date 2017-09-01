@@ -274,3 +274,24 @@ html, body {height:100%;width:100%;background-color:#F5F5F5;}
 .order-appointment-right{width:30%;height:1.8rem;line-height:1.8rem;}
 
 
+/*提现*/
+.service-list .money-icon{width:5%;line-height: 2rem;height:2rem;overflow: hidden}
+.service-list .order-list{margin:8px 15px;}
+.service-list .withdraw-input-area{width:92%;line-height: 2rem;height:2rem;margin-left:3%}
+.service-list .withdraw-input-area .withdraw-money{border:0px;border-bottom:1px solid #c9c9c9;width:100%}
+.withdraw-confirm{color:#77C560}
+
+
+/*服务页，咨询专家*/
+.service-list .order-list .reply-textarea{width:100%;height:4rem;padding:10px}
+.service-list .order-list .confirm-reply{width:100%;height:4rem;padding:10px}
+.service-list .order-list .reply-pic{height:3.5rem;background: rgba(0,0,0,0.2);width:30%;margin-left:3%}
+
+/*钱包*/
+.wallet-divider{border-top:1px solid #d4d4d4;height:1px;margin:20px 0px;}
+.wallet-detail{background: #89C348;color: #ffffff;padding:20px 10px;}
+.wallet-detail .wallet-detail-panel{position: relative}
+.wallet-detail .wallet-detail-panel .icon-up-right{position: absolute;right: 20px;top:10px;}
+.wallet-detail-titleAndcontent div{text-align: center;margin-bottom:10px}
+.deduct-money{color:#ce3c39}
+.withdraw-record{color:#77C560}

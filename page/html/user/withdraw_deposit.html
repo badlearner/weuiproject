@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>提现</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../js/libs/weui/css/weui.min.css">
+    <link rel="stylesheet" href="../../js/libs/swiper/css/swiper.min.css">
+    <script src="../../js/libs/util/rem.js"></script>
+    <!--<script src="../../js/libs/base/zepto.min.js"></script>-->
+    <script src="../../js/libs/star/jquery.min.js"></script>
+    <script src="../../js/libs/star/jquery.raty.min.js"></script>
+    <script src="../../js/libs/weui/js/weui.min.js"></script>
+</head>
+<body>
+<div class="service-title user-back">
+    <p class="service-position"><i class="icon icon-position-w"></i><span>成都妇幼儿童医院</span></p>
+    <p class="user-name">爱吃蛋糕长不胖</p>
+    <p class="user-image"><img src="../../images/user_title.png"></p>
+    <a href="#" class="user-phone"><i class="icon icon-phone"></i></a>
+    <p class="user-position">资深产后恢复调理师</p>
+    <div class="start"><div id="start"></div><span class="start-text"><city class="">4</city>分<city class="">62</city>人评论</span></div>
+</div>
+<div class="service-title page">
+    <div class="page__bd" style="height: 100%;">
+        <div class="weui-tab">
+            <div class="weui-navbar">
+                <div class="weui-navbar__item" list-data="order">
+                    订单
+                </div>
+                <div class="weui-navbar__item weui-bar__item_on" list-data="money">
+                    钱包
+                </div>
+            </div>
+            <div class="weui-tab__panel">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="service-list">
+    <div class="weui-cells order-list">
+        <div class="weui-cell">
+            <div class="weui-cell__bd o-position-r">
+                <p class="f-size-s">提现金额</p>
+                <div class="f-left f-size-m money-icon">￥</div>
+                <div class="f-left withdraw-input-area">
+                    <input type="text" class="f-size-m withdraw-money"/>
+                </div>
+                <p class="f-size-s">可用余额5600元（每次仅能够提取100的整数倍）</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="service-list">
+    <div class="weui-cells order-list">
+        <div class="weui-cell">
+            <div class="weui-cell__bd o-position-r" style="line-height: 1rem">
+                <p class="f-size-s">姓名:河东</p>
+                <p class="f-size-s">卡号:217003810052895359</p>
+                <p class="f-size-s">开户行:建行成都理工大学支行</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="service-list">
+    <div class="weui-cells order-list">
+        <div class="weui-cell">
+            <div class="weui-cell__bd o-position-r">
+                <div class="withdraw-confirm f-size-s">请核对准确后提现，若有误，及时联系客服！</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="w-80 position-at-center">
+    <button class="weui-btn weui-btn_green">
+    确认提现
+    </button>
+</div>
+
+</body>
+<script>
+    $(function(){
+        $.fn.raty.defaults.path = '../../js/libs/star/img';
+        $('#start').raty({ readOnly: true, score: 4,width:120, });
+    });
+</script>
+
+</html>
